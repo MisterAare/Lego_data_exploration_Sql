@@ -95,8 +95,7 @@ select
 			on inv.part_num = p.part_num
 		inner join part_categories pc
 			on part_cat_id = pc.id;
-SELECT * FROM sql_project_lego.lego_color;
--- (To view the View statement table created) --
+-- SELECT * FROM sql_project_lego.lego_color; (To view the View statement table created) --
             
 select color_name, sum(quantity) as quantity_of_parts
 from sql_project_lego.lego_color
