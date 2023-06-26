@@ -1,4 +1,9 @@
---- CREATE TABLES TO IMPORT CVS FILE USING MYSQL COMMAND LINE --
+--- CREATE TABLES TO IMPORT CVS FILES USING MYSQL COMMAND LINE --
+
+-- Importing Files into a Database on MySQL using Command --
+-- STEP ONE: show variables like "secure_file_priv"; --
+-- STEP TWO: Copy the CSV file to the above location --
+-- STEP THREE: Create tables (See example below) --
 
 CREATE TABLE IF NOT EXISTS `inventories` (
   `id` int4 ,
@@ -81,11 +86,8 @@ CREATE TABLE IF NOT EXISTS `part_relationships` (
   `parent_part_num` varchar(20) DEFAULT NULL
 );
 
--- Importing Files into a Database on MySQL using Command --
--- STEP ONE: show variables like "secure_file_priv"; --
--- STEP TWO: Copy the CSV file to above location --
--- STEP THREE: Create table (See example above) --
--- STEP FOUR: Load data infile (See below) --
+
+-- STEP FOUR: Load data in file (See below) --
 -- Note that the file locations (C:\ProgramData\MySQL\MySQL Server 8.0\\) might varies from the below Load data infile locations --
 
 -- Load Colors Table file -- 
