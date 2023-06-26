@@ -7,7 +7,6 @@ In this project, I will guide you through the process of creating a database for
 Here are the skills we will work on in this SQL project:
 
 1. Creating a Database in SQL Server
-
 2. Importing Files into a Database on MySQL using MySQL Command
 3. SQL Joins
 4. SQL Window Functions
