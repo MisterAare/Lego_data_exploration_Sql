@@ -48,7 +48,7 @@ group by Century;
 
 -- QUESTION 4 --
 -- Common Table Expressions (CTEs)--
--- What percentage of sets ever released in the 21st Century were Trains Themed - 
+-- What percentage of sets ever released in the 21st Century were Star wars Themed - 
 with lego_set as 
 (
 	select Century, theme_name, count(set_num) total_set_num
